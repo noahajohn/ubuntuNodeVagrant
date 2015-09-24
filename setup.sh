@@ -1,3 +1,4 @@
+cd
 mkdir bin
 cd bin
 git clone https://github.com/josegl/dotfiles
