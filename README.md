@@ -11,3 +11,4 @@
 8. You are done with the lastest npm,node version, tmux, vim with a bunch of usefull plugins and
    configs
 
+*Important note:* If you are asked for a password, it is 'vagrant' without quotes
