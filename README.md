@@ -4,6 +4,10 @@ classical vim programming environment.
 This assumes you already have a project on your host 
 The project will be available inside `~/project` in the virtual machine out of the box.
 
+This project uses my own dotfiles, you can check them in https://github.com/josegl/dotfiles.git
+
+Feel free to fork this to use your own dotfiles or change whatever you want.
+
 ## How to use
 1. Clone this repo in your project's root directory.
 2. cd into the repo's directory
