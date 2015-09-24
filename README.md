@@ -1,6 +1,11 @@
 ### Vagrant machine running ubuntu trusty x64 ready to play with Nodejs
+This will setup a ubuntu trusty 64 bits vagrant box ready for play with nodejs, vim tmux and the
+classical vim programming environment.
+This assumes you already have a project on your host 
+The project will be available inside `~/project` in the virtual machine out of the box.
+
 ## How to use
-1. Clone this repo in your project root directory.
+1. Clone this repo in your project's root directory.
 2. cd into the repo's directory
 3. Run `vagrant up`
 4. Run `vagrant ssh`
