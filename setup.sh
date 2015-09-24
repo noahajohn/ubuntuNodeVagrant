@@ -4,7 +4,7 @@ cd bin
 repo="https://github.com/josegl/dotfiles";
 git clone $repo
 cd dotfiles
-sed -i.bak -e 's/\/usr\/lib\/python3\.4/site/\/usr\/local\/lib\python2\.7\/dist/g' .tmux.conf
+sed -i.bak -e 's/usr\/lib\/python3\.4\/site/usr\/local\/lib\/python2\.7\/dist/g' .tmux.conf
 ./setupEnvironment.sh
 cd ~/bin
 echo 'Introduce la url de la ultima version de node: '
