@@ -11,7 +11,7 @@ echo 'Introduce la url de la ultima version de node: '
 read url
 wget $url
 tar -xf node*.gz
-nodeDir = $(ls -p | grep node | grep /)
+nodeDir=$(ls -p | grep node | grep /)
 cd $nodeDir/bin
 sudo ./npm install -g n
 sudo ./n latest
