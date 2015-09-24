@@ -11,4 +11,7 @@
 8. You are done with the lastest npm,node version, tmux, vim with a bunch of usefull plugins and
    configs
 
+9. To get all the config finished it's highly recommended to logout from the virtual machine and
+   login again with `vagrant ssh` no vagrant machine reboot required
+
 *Important note:* If you are asked for a password, it is 'vagrant' without quotes
