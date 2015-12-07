@@ -12,7 +12,8 @@ sudo ./n latest
 cd
 sudo npm install -g npm
 sudo npm install -g n
-echo "Latest node and npm versions installed system globally."
+sudo npm install -g mocha
+echo "Latest node, npm, and mocha versions installed in system globally."
 cd
 echo "Installing mongodb..."
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
