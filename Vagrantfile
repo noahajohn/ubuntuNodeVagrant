@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/bionic64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network "forwarded_port", guest: 9229, host: 9229
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -41,8 +42,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  #config.vm.synced_folder "../", "/home/vagrant/project", type: "nfs"
-  config.vm.synced_folder "../", "/home/vagrant/project", type: "nfs"
+  # config.vm.synced_folder "../", "/home/vagrant/project", type: "nfs"
+  config.vm.synced_folder "../autoscores", "/home/vagrant/autoscores", type: "nfs"
+  config.vm.synced_folder "../asbe", "/home/vagrant/asbe", type: "nfs"
+  config.vm.synced_folder "../loot-box", "/home/vagrant/loot-box", type: "nfs"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -53,7 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   vb.gui = true
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
-  vb.customize ["modifyvm", :id, "--memory", "1512"]
+  vb.customize ["modifyvm", :id, "--memory", "3145"]
   end
   #
   # View the documentation for the provider you're using for more
